@@ -1,0 +1,21 @@
+{
+  "name": "peerbeats",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Peer-to-peer music streaming system for a live lab demo.",
+  "workspaces": ["server", "web"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "npm run build -w web",
+    "start": "npm run start -w server",
+    "seed": "npm run seed -w server",
+    "ingest": "npm run ingest -w server --",
+    "test:stage1": "npm run test:stage1 -w server",
+    "test:stage2": "npm run test:stage2 -w server",
+    "test:stage3": "npm run test:stage3 -w server",
+    "test:stage4": "npm run test:stage4 -w server",
+    "test:stage5": "npm run test:stage5 -w server",
+    "test:five": "npm run test:five -w server",
+    "test:chrome": "npm run test:chrome -w server"
+  }
+}
