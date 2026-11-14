@@ -1,0 +1,44 @@
+{
+  "name": "@peerbeats/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "seed": "tsx scripts/seed.ts",
+    "ingest": "tsx scripts/ingest.ts",
+    "test:stage1": "tsx test/stage1.test.ts",
+    "test:stage2": "tsx test/stage2.test.ts",
+    "test:stage3": "tsx test/stage3.test.ts",
+    "test:stage4": "tsx test/stage4.test.ts",
+    "test:stage5": "tsx test/stage5.test.ts",
+    "test:five": "node test/five.e2e.cjs",
+    "test:chrome": "node test/chrome.e2e.cjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.2.17",
+    "bcryptjs": "^2.4.3",
+    "cloudflared": "^0.7.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "ffmpeg-static": "^5.2.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "socket.io": "^4.8.4",
+    "tsx": "^4.19.2",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.10.5",
+    "@types/pg": "^8.11.10",
+    "puppeteer-core": "^23.11.1",
+    "socket.io-client": "^4.8.4",
+    "typescript": "^5.7.3"
+  }
+}
